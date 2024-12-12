@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "jaejaljaejal",
+    "slug": "jaejaljaejal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "me.soungmin.jaejal",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAl_lc-gpz8CDfGg5JSc0vXIn2F2ItwouM"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "me.soungmin.jaejal",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAl_lc-gpz8CDfGg5JSc0vXIn2F2ItwouM"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@react-native-seoul/kakao-login",
+        {
+          "kakaoAppKey": "84f4011ce7c5e0708620a8cb20384de5",
+          "overrideKakaoSDKVersion": "2.11.2",
+          "kotlinVersion": "1.9.0"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "extraMavenRepos": [
+              "https://devrepo.kakao.com/nexus/content/groups/public/"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Jaejal to access your microphone."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3b5c2ff7-b5e6-4a61-94bc-75c5d35f1b08"
+      }
+    }
+  }
+}
